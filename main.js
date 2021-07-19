@@ -42,6 +42,7 @@ const data = [
 ]
 
 const container = document.querySelector('.container');
+const body = document.querySelector('#body');
 const btn = document.querySelector('#btn');
 const h3 = document.createElement('h3');
 const h4 = document.createElement('h4');
@@ -53,6 +54,14 @@ function randomNumber() {
     let num = Math.floor(Math.random() * data.length);
     return num;
 }
+function bgColor(){
+    let red = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
+
+    let color = `rgb(${red}, ${green}, ${blue})`;
+    return color;
+}
 
 function getQuote() {
     let randNum = randomNumber();
@@ -63,4 +72,5 @@ function getQuote() {
     container.prepend(h5);
     container.prepend(h4);
     container.prepend(h3);
+    body.style.backgroundColor = bgColor();
 }

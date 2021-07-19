@@ -7,11 +7,10 @@ body{
     font-family: 'Lora', serif;
 }
 .container{
-    border: 1px solid green;
     width: 80%;
     text-align: center;
     margin: auto;
-    margin-top: 25%;
+    margin-top: 15%;
     padding: 3rem .6rem;
 }
 .container h3{
