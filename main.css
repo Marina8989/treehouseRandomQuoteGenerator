@@ -15,12 +15,21 @@ body{
     padding: 3rem .6rem;
 }
 .container h3{
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
 }
 .container h4{
-    margin-left: 10rem;
+    margin-left: 12rem;
     padding-bottom: .5rem;
 }
 .container h5{
-    margin-left: 12.4rem;
+    margin-left: 14.4rem;
+}
+#btn{
+    margin: 4rem 0 1rem 0;
+    padding: .5rem .8rem;
+    font-size: 17px;
+    color: white;
+    background: grey;
+    border: none;
+    border-radius: 5px;
 }

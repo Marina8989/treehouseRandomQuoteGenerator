@@ -41,3 +41,26 @@ const data = [
     },
 ]
 
+const container = document.querySelector('.container');
+const btn = document.querySelector('#btn');
+const h3 = document.createElement('h3');
+const h4 = document.createElement('h4');
+const h5 = document.createElement('h5');
+
+btn.addEventListener('click', getQuote);
+
+function randomNumber() {
+    let num = Math.floor(Math.random() * data.length);
+    return num;
+}
+
+function getQuote() {
+    let randNum = randomNumber();
+    console.log(randNum);
+    h3.innerText = data[randNum].quote;
+    h4.innerText = data[randNum].author;
+    h5.innerText = data[randNum].place;
+    container.prepend(h5);
+    container.prepend(h4);
+    container.prepend(h3);
+}
